@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo"><span>IRON</span> GYM</h1>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Build Your <span>Strength</span></h2>
+            <p>Transform your body and mind with our world-class facilities and expert trainers</p>
+            <a href="#plans" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About <span>Us</span></h2>
+        <div class="underline"></div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Iron Gym has been serving fitness enthusiasts since 2020. Our state-of-the-art facility is equipped with the latest machines, free weights, and dedicated areas for cardio, strength training, and group classes.</p>
+                <p>Whether you are a beginner or an experienced athlete, our certified trainers are here to guide you every step of the way. We believe fitness is for everyone.</p>
+                <p>Our mission is to create a supportive environment where you can push your limits and achieve goals you never thought possible.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <p class="stat-number">300+</p>
+                    <p class="stat-label">Members</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">15+</p>
+                    <p class="stat-label">Trainers</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">8+</p>
+                    <p class="stat-label">Years</p>
+                </div>
+                <div class="stat-box">
+                    <p class="stat-number">24/7</p>
+                    <p class="stat-label">Open</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our <span>Services</span></h2>
+        <div class="underline"></div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400" alt="Weight Training">
+                <div class="service-info">
+                    <h3>Weight Training</h3>
+                    <p>Access to a wide range of free weights and machines for building muscle and strength.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400" alt="Group Classes">
+                <div class="service-info">
+                    <h3>Group Classes</h3>
+                    <p>Join our energetic group sessions including yoga, HIIT, Zumba, and spinning classes.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400" alt="Personal Training">
+                <div class="service-info">
+                    <h3>Personal Training</h3>
+                    <p>Get one-on-one guidance from our certified trainers with customized workout plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="plans">
+        <h2>Membership <span>Plans</span></h2>
+        <div class="underline"></div>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <p class="price">Rs.999</p>
+                <p class="period">/month</p>
+                <ul>
+                    <li>✓ Gym Access (6AM - 10PM)</li>
+                    <li>✓ Locker Room</li>
+                    <li>✓ Free Parking</li>
+                    <li class="disabled">✗ Group Classes</li>
+                    <li class="disabled">✗ Personal Trainer</li>
+                </ul>
+                <a href="#contact" class="plan-btn">Choose Plan</a>
+            </div>
+            <div class="plan-card popular">
+                <span class="badge">Popular</span>
+                <h3>Pro</h3>
+                <p class="price">Rs.1999</p>
+                <p class="period">/month</p>
+                <ul>
+                    <li>✓ 24/7 Gym Access</li>
+                    <li>✓ Locker Room & Sauna</li>
+                    <li>✓ Free Parking</li>
+                    <li>✓ Group Classes</li>
+                    <li class="disabled">✗ Personal Trainer</li>
+                </ul>
+                <a href="#contact" class="plan-btn active">Choose Plan</a>
+            </div>
+            <div class="plan-card">
+                <h3>Elite</h3>
+                <p class="price">Rs.2999</p>
+                <p class="period">/month</p>
+                <ul>
+                    <li>✓ 24/7 Gym Access</li>
+                    <li>✓ Locker Room & Sauna</li>
+                    <li>✓ Free Parking</li>
+                    <li>✓ All Group Classes</li>
+                    <li>✓ Personal Trainer (2x/week)</li>
+                </ul>
+                <a href="#contact" class="plan-btn">Choose Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact <span>Us</span></h2>
+        <div class="underline"></div>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <div>
+                <p class="info-title">Address</p>
+                <p class="info-text">Greater Noida, Uttar Pradesh</p>
+            </div>
+            <div>
+                <p class="info-title">Phone</p>
+                <p class="info-text">+91 8607900391</p>
+            </div>
+            <div>
+                <p class="info-title">Email</p>
+                <p class="info-text">info@irongym.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Iron Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
